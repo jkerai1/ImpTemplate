@@ -2,9 +2,9 @@ import re #Regex
 import os #for getting username
 import datetime #get datestamp
 from pathlib import Path #for seeing if file exists or not
-import sys #for exit
+import sys
 ##Random Test IP:     221.241.59.100
-#THIS WILL NOT WORK ON AN ONLINE EDITOR e.g https://www.online-python.com/ because i am attempting to save locally
+
 
 regex = "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$"
 
@@ -68,33 +68,28 @@ def GetBrowserAndCountry():
         
     Country =input ("what is country?   ").upper()
     
-    return (Browser), Country 
+    return Browser, Country 
 #####################################################################################################################################################    
 
 
 ###########Create New file or check if one exists################
 
 date =  datetime.datetime.now().strftime("%d-%m-%y")
-#print("Todays Date: " + date)
-##path C:\Users\JayK\Desktop
-filepath = os.path.join("C:\\Users\\" + os.getlogin() + "\\Desktop","Imperva - " + date + ".txt") ##get user name 
+filepath = os.path.join("C:\\Users\\" + os.getlogin() + "\\Desktop","Imperva - " + date + ".txt") ##get user name. ##Syntax:  os.path.join(dir_name, base_filename + "." + filename_suffix)
 
-##Syntax:  os.path.join(dir_name, base_filename + "." + filename_suffix)
-
-print("Your File path is: " + filepath)
-
+#note can easily be changed to a different file format like .doc using a library
 
 
 #see if file exists, if it doesn't then make one.        
 if Path(filepath).is_file(): 
-    print ("File exist")
+    print ("File exist -> " + filepath)
     f =open(filepath,"a") #by default it is text not binary
 else:
-    print ("File does not exist...creating one now")
+    print ("File does not exist...creating one now... "+ filepath)
     f =open(filepath, "x")#for a new file. if file already exists then to append use
 
 
-##########################Body################## 
+##########################Body################## ##########################################
 while True: ##run infinitely until session timeout
     IP = (input("IP address: ?  "))
     check(IP)
@@ -137,8 +132,8 @@ while True: ##run infinitely until session timeout
         PrintAndAppend("We can confirm the IP provided is currently being blocked due to a VPN or a hosted environment.")
      
     else:
-        print("incorrect option \n Options are: \n NS for Not seen \n seen \n inv/cookie/javascript/js \n kv/vpn/host ")
+        print("incorrect option \n Options are: \n\n -NS for Not Seen \n\n -Seen \n\n -Inv/Cookie/Javascript/Js \n\n -Kv/Vpn/Host ")
         
-    PrintAndAppend("\n------------------------------------------------------------------------------------------------------------------") ##seperator   
+    PrintAndAppend("\n-------------------------------------------------------------------------------------------------------------------------") ##seperator   
     
     ##there is a much better way to copy across std.out and file output, but zzzzzzzzzzzzzzzzzz### 
