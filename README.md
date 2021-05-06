@@ -1,4 +1,8 @@
 # ImpTemplate
+
+Evidently I am rusty with python....
+
+
 Features:
 
 -clean up shorthand
