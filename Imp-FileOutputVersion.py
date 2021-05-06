@@ -35,7 +35,7 @@ def PrintAndAppend(stringtoappend):
 def GetBrowserAndCountry():
     Browser = input("what is browser?   ").lower()
     
-    ######################Clean up shorthand############################### probably a better way to do this using regex#############
+##########################Clean up shorthand############################### probably a better way to do this using regex#############
     if Browser.__contains__("chr") and not Browser.__contains__("chrome"):
         Browser = (Browser.replace("chr","Chrome"))
         
@@ -68,8 +68,7 @@ def GetBrowserAndCountry():
         
     Country =input ("what is country?   ").upper()
     
-    return Browser, Country 
-#####################################################################################################################################################    
+    return Browser, Country    
 
 
 ###########Create New file or check if one exists################
@@ -100,7 +99,7 @@ while True: ##run infinitely until session timeout
         string_to_append  = ("\n" + "We can confirm that no traffic is seen on the Imperva portal for the IP provided.")
         PrintAndAppend(string_to_append)
     
-    elif Error_type == "seen" or Error_type == "allowed":
+    elif Error_type == "seen" or Error_type == "allowed" or Error_type == "s"  or Error_type == "allow":
         Printfunc(IP)
         string_allowed = ("\n" + "We can confirm that traffic for the IP provided is seen on the Imperva portal and is allowed.")
         PrintAndAppend(string_allowed)
@@ -132,8 +131,6 @@ while True: ##run infinitely until session timeout
         PrintAndAppend("We can confirm the IP provided is currently being blocked due to a VPN or a hosted environment.")
      
     else:
-        print("incorrect option \n Options are: \n\n -NS for Not Seen \n\n -Seen \n\n -Inv/Cookie/Javascript/Js \n\n -Kv/Vpn/Host ")
+        print("incorrect option \n Options are: \n\n - NS for not seen \n\n - Seen or s or allowed \n\n - inv/cookie/javascript/js \n\n -Kv/vpn/host ")
         
     PrintAndAppend("\n-------------------------------------------------------------------------------------------------------------------------") ##seperator   
-    
-    ##there is a much better way to copy across std.out and file output, but zzzzzzzzzzzzzzzzzz### 
