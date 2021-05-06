@@ -4,7 +4,7 @@ import datetime #get datestamp
 from pathlib import Path #for seeing if file exists or not
 import sys #for exit
 ##Random Test IP:     221.241.59.100
-
+#THIS WILL NOT WORK ON AN ONLINE EDITOR e.g https://www.online-python.com/ because i am attempting to save locally
 
 regex = "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$"
 
