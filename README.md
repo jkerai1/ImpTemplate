@@ -23,3 +23,5 @@ Use ctrl + c to interrupt python terminal
 f.close() - closes file in case u need to delete the .txt
 
 If you want to reload the .txt automatically on notepad++, go to Settings / Preferences, then the MISC tab and uncheck Update silently under File Status Auto-detection.
+
+To paste as plain text is ctrl shift v
