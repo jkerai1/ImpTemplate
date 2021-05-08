@@ -142,7 +142,7 @@ while True: ##run infinitely until session timeout
     elif ("kv") in Error_type or Error_type.__contains__("vp") or Error_type.__contains__("host"):
         
         Browser, Country = GetBrowserAndCountry()
-        Geo = input("what is geo?   ")
+        Geo = input("what is geo?   ").lstrip()
         
         ##Capitalise every first letter in Geo ###
         GeoTemp = Geo.split()
