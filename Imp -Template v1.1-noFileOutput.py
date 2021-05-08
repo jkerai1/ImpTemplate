@@ -2,6 +2,7 @@
 
 import re
 import sys
+#import webbrowser
 
 ##Random Test IP: 221.241.59.100
 ##this file can be run in an online editor such as https://www.online-python.com/
@@ -140,6 +141,6 @@ while True: ##run infinitely until session timeout
         print("We can confirm the IP provided is currently being blocked due to a VPN or a hosted environment.")
     
     else:
-        print("incorrect option \n Options are: \n\n - NS for not seen \n\n - Seen or s or allowed \n\n - inv/cookie/javascript/js \n\n -Kv/vpn/host. Further info please see Github ReadMe https://github.com/jkerai1/ImpTemplate/blob/main/README.md ")
+          print("\n incorrect option \n Options are: \n\n - not seen - not seen,ns,n.not,n \n\n - Seen - s,allow,allowed,s \n\n - traffic blocked - inv,invalid, cook, cookie, java, javascript, js, fi, forc, bloc, tok \n\n -KVDC - kv, kvdc, kvd, vp, vpn, host \n \nfor further info please see readme https://github.com/jkerai1/ImpTemplate/blob/main/README.md ")
         
     print("\n-------------------------------------------------------------------------------------------------------------------------")    
