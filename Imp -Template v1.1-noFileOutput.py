@@ -134,6 +134,6 @@ while True: ##run infinitely until session timeout
         print("We can confirm the IP provided is currently being blocked due to a VPN or a hosted environment.")
     
     else:
-        print("incorrect option \n Options are: \n\n - NS for not seen \n\n - Seen or s or allowed \n\n - inv/cookie/javascript/js \n\n -Kv/vpn/host. Further info please see Github ReadMe ")
+        print("incorrect option \n Options are: \n\n - NS for not seen \n\n - Seen or s or allowed \n\n - inv/cookie/javascript/js \n\n -Kv/vpn/host. Further info please see Github ReadMe https://github.com/jkerai1/ImpTemplate/blob/main/README.md ")
         
     print("\n-------------------------------------------------------------------------------------------------------------------------")    
