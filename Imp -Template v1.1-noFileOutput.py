@@ -21,8 +21,19 @@ def Printfunc(IP):
   
 def GetBrowserAndCountry():
     Browser = input("what is browser?   ").lower()
+
+
+def CapitaliseEveryFirstLetter(someString): ##Capitalise every first letter ###
+        someString = someString.split()
+        newString =""
+        
+        for val in someString:
+            newString += val.capitalize()+  " "
+            
+        return newString
+            
     
-##Clean up shorthand###############################
+####################Clean up shorthand###############################
 
 ###Chrome###
     if Browser.__contains__("chr") and not Browser.__contains__("chrome"):
@@ -62,7 +73,10 @@ def GetBrowserAndCountry():
         
     if "yan" in Browser and not ("yandex") in Browser:
         Browser = (Browser.replace("yan", "Yandex"))
-        
+	
+###F1 App####
+    if "f1" in Browser and not "f1 app" in Browser:
+        Browser = Browser.replace("f1","F1 App")
     
         
         
@@ -70,6 +84,8 @@ def GetBrowserAndCountry():
     Browser = ''.join([i.capitalize() for i in Browser])
         
     Country =input ("what is country?   ").upper().replace(" ","") ##convert to upper and remove whitespaces
+    Country = re.sub(r'[^\w\s]', '', Country) ##strip punctuation
+    
     
     return Browser, Country    
 #####################################################################################################################################################    
@@ -86,8 +102,21 @@ while True: ##run infinitely until session timeout
     elif Error_type == "seen" or Error_type.__contains__("allo") or Error_type == "s":
         Printfunc(IP)
         print("\n" + "We can confirm that traffic for the IP provided is seen on the Imperva portal and is allowed.")
+	
+	##Special Cases, put first because order matters in Python:
+       
+    elif ("kvinv") in Error_type: ##both 
+        
+        Browser, Country = GetBrowserAndCountry()
+        Geo = input("what is geo?   ").lstrip() ##remove left most spaces
+        Geo = CapitaliseEveryFirstLetter(Geo)
+        Printfunc(IP)
+        print("Browser: " + Browser) ##i could block this into one function if i really wanted to....
+        print("Country: "+ Country)
+        print("Geo Org: " + Geo  +"\n")
+        print("We can confirm the IP provided is currently being blocked due to a VPN or a hosted environment and blocked due to a Javascript or Browser cookie issue.")
 
-    elif ("inv") in Error_type or ("cook") in Error_type or "java" in Error_type or Error_type == "js":
+    elif ("inv") in Error_type or ("cook") in Error_type or "java" in Error_type or Error_type == "js" or Error_type.__contains__("forc") or Error_type == "fi":
         Browser, Country = GetBrowserAndCountry()
         Printfunc(IP)
         print("Browser: " + Browser)
@@ -97,21 +126,14 @@ while True: ##run infinitely until session timeout
     elif Error_type.__contains__("kv") or Error_type.__contains__("vp") or Error_type.__contains__("host"):
         Browser, Country = GetBrowserAndCountry()
         Geo = input("what is geo?   ")
-	
-	##Capitalise every first letter in Geo ###
-        GeoTemp = Geo.split()
-        newGeo =""
-        
-        for val in GeoTemp:
-            newGeo += val.capitalize()+  " "     
-	
+	Geo = CapitaliseEveryFirstLetter(Geo)
         Printfunc(IP)
         print("Browser: " + Browser)
         print("Country: "+ Country)
-        print("Geo Org: " + newGeo  +"\n")
+        print("Geo Org: " + Geo  +"\n")
         print("We can confirm the IP provided is currently being blocked due to a VPN or a hosted environment.")
     
     else:
-        print("incorrect option \n Options are: \n\n - NS for not seen \n\n - Seen or s or allowed \n\n - inv/cookie/javascript/js \n\n -Kv/vpn/host ")
+        print("incorrect option \n Options are: \n\n - NS for not seen \n\n - Seen or s or allowed \n\n - inv/cookie/javascript/js \n\n -Kv/vpn/host. Further info please see Github ReadMe ")
         
     print("\n-------------------------------------------------------------------------------------------------------------------------")    
