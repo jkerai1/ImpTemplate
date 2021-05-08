@@ -64,7 +64,7 @@ If you want to reload the .txt automatically on notepad++, go to Settings / Pref
 
 
 
-#Other  Features:
+# Other  Features:
 
 -Autocapitialization & removal of whitespaces
 
