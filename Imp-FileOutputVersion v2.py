@@ -155,7 +155,7 @@ while True: ##run infinitely until session timeout
 
 
 ###Normal Cases####
-    elif ("inv") in Error_type or ("cook") in Error_type or "java" in Error_type or Error_type == "js" or Error_type.__contains__("forc") or Error_type == "fi" or Error_type.__contains__("bloc"):
+    elif ("inv") in Error_type or ("cook") in Error_type or "java" in Error_type or Error_type == "js" or Error_type.__contains__("forc") or Error_type == "fi" or Error_type.__contains__("bloc")  or Error_type.__contains__("tok"):
         Browser, Country = GetBrowserAndCountry()
         Printfunc(IP)
         
