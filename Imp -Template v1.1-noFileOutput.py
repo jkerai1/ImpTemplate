@@ -21,16 +21,6 @@ def Printfunc(IP):
   
 def GetBrowserAndCountry():
     Browser = input("what is browser?   ").lower()
-
-
-def CapitaliseEveryFirstLetter(someString): ##Capitalise every first letter ###
-        someString = someString.split()
-        newString =""
-        
-        for val in someString:
-            newString += val.capitalize()+  " "
-            
-        return newString
             
     
 ####################Clean up shorthand###############################
@@ -88,6 +78,17 @@ def CapitaliseEveryFirstLetter(someString): ##Capitalise every first letter ###
     
     
     return Browser, Country    
+
+
+
+def CapitaliseEveryFirstLetter(someString): ##Capitalise every first letter ###
+        someString = someString.split()
+        newString =""
+        
+        for val in someString:
+            newString += val.capitalize()+  " "
+            
+        return newString
 #####################################################################################################################################################    
 
 while True: ##run infinitely until session timeout
