@@ -1,5 +1,8 @@
+##Reference Stuff: ###
+
 #Random Test IP:     221.241.59.100
 #f.close()
+#readme https://github.com/jkerai1/ImpTemplate/blob/main/README.md
 
 
 #################     Imports         #############################
@@ -8,7 +11,7 @@ import os #for getting username
 import datetime #get datestamp
 from pathlib import Path #for seeing if file exists or not
 import sys
-
+import webbrowser
 
 regex = "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$"
 
@@ -196,6 +199,13 @@ while True: ##run infinitely until session timeout
        
         
     else:
-        print("incorrect option \n Options are: \n\n - NS for not seen \n\n - Seen or s or allowed \n\n - inv/cookie/javascript/js \n\n -Kv/vpn/host.\n for further info please see readme https://github.com/jkerai1/ImpTemplate/blob/main/README.md ")
+        print("\n incorrect option \n Options are: \n\n - not seen - not seen,ns,n.not,n \n\n - Seen - s,allow,allowed,s \n\n - traffic blocked - inv,invalid, cook, cookie, java, javascript, js, fi, forc, bloc, tok \n\n -KVDC - kv, kvdc, kvd, vp, vpn, host \n \nfor further info please see readme https://github.com/jkerai1/ImpTemplate/blob/main/README.md ")
+        
+        getReadMeOpenRequest = input("Would you like to go to the readme? (y) ").lower()
+        
+        if "y" in getReadMeOpenRequest:
+            webbrowser.open("https://github.com/jkerai1/ImpTemplate/blob/main/README.md")
+        else:
+            pass
         
     PrintAndAppend("\n-------------------------------------------------------------------------------------------------------------------------") ##seperator  
