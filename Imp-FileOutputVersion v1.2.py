@@ -9,7 +9,7 @@ import sys
 
 regex = "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$"
 
-punc_filter = re.compile('([/]\s*)')
+punc_filter = re.compile('([/\s]\s*)')
 
 def check(Ip): ##see if IP is valid using Regex, whitespaces are removed when reading in anyway
     if(re.search(regex, Ip)):
