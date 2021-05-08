@@ -44,11 +44,11 @@ F1 app - f1
 
 # Useful Notes:
 		
-Program works in Juypter notebook
+Program works in Juypter notebook quite well
+
+ctrl + c interrupts python terminal but ctrl shift c (copying as raw text) does not 
 
 To paste as plain text is ctrl shift v to Teams
-
-Use ctrl + c to interrupt python terminal
 
 f.close() - closes file in case u need to delete the .txt
 
