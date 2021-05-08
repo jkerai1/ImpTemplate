@@ -27,11 +27,11 @@ yandex - yan, ya
 
 not seen - not seen, ns, n,not,no
 
-seen - seen,allo,allowed,allow, s
+seen - seen, allo, allowed, allow, s
 
-invalid - inv,invalid,cook,cookie,java,javascript,js
+invalid - inv, invalid, cook, cookie, java, javascript, js
 
-KVDC - kv,kvdc,kvd,vp,vpn,host
+KVDC - kv, kvdc, kvd, vp, vpn, host
 
 
 
