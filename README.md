@@ -1,6 +1,6 @@
 # ImpTemplate 
 
-#Random Test IP: 221.241.59.100
+# Random Test IP: 221.241.59.100
 
 
 One version is just for the online editor i.e. no file output, tested working https://www.online-python.com/ on DAAS
@@ -9,7 +9,7 @@ One version is just for the online editor i.e. no file output, tested working ht
 FileOutput Version outputs a text file with all logged events but can't be run in an online editor (because you can't create the file locally)
 
 
-#Browser Shorthands (not req'd but handy):
+# Browser Shorthands (not req'd but handy):
 
 Chrome - chr,cr
 firefox - ff, ffox
@@ -40,7 +40,7 @@ If you want to reload the .txt automatically on notepad++, go to Settings / Pref
 To paste as plain text is ctrl shift v
 
 
-#Features:
+# Features:
 
 -clean up shorthand
 
