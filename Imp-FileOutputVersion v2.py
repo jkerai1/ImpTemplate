@@ -187,6 +187,6 @@ while True: ##run infinitely until session timeout
        
         
     else:
-        print("incorrect option \n Options are: \n\n - NS for not seen \n\n - Seen or s or allowed \n\n - inv/cookie/javascript/js \n\n -Kv/vpn/host ")
+        print("incorrect option \n Options are: \n\n - NS for not seen \n\n - Seen or s or allowed \n\n - inv/cookie/javascript/js \n\n -Kv/vpn/host.\n for further info please see readme https://github.com/jkerai1/ImpTemplate/blob/main/README.md ")
         
     PrintAndAppend("\n-------------------------------------------------------------------------------------------------------------------------") ##seperator  
