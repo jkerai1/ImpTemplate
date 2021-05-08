@@ -9,6 +9,16 @@ One version is just for the online editor i.e. no file output, https://www.onlin
 FileOutput Version outputs a text file with all logged events but can't be run in an online editor (because you can't create the file locally). notepad++ recommended for this method as it has silent auto-refresh
 
 
+#  Error Shorthands:
+
+not seen - not seen, ns, n,not,no
+
+seen - seen, allo, allowed, allow, s
+
+invalid - inv, invalid, cook, cookie, java, javascript, js
+
+KVDC - kv, kvdc, kvd, vp, vpn, host
+
 # Browser Shorthands (not req'd but handy):
 
 Chrome - chr,cr,chro,chrom
@@ -22,16 +32,6 @@ edge - edg
 opera - op
 
 yandex - yan, ya
-
-#  Error Shorthands:
-
-not seen - not seen, ns, n,not,no
-
-seen - seen, allo, allowed, allow, s
-
-invalid - inv, invalid, cook, cookie, java, javascript, js
-
-KVDC - kv, kvdc, kvd, vp, vpn, host
 
 
 
@@ -50,10 +50,8 @@ If you want to reload the .txt automatically on notepad++, go to Settings / Pref
 
 
 
-# Features:
+#Other  Features:
 
--clean up shorthand
-
--autocapitialization and removal of whitespaces
+-Autocapitialization & removal of whitespaces
 
 -Regex to validate IP address
