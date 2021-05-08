@@ -12,6 +12,7 @@ import datetime #get datestamp
 from pathlib import Path #for seeing if file exists or not
 import sys
 import webbrowser
+#import snow ##I have a seperate script to open snow  , comment this out 
 
 regex = "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$"
 
@@ -48,14 +49,14 @@ def GetBrowserAndCountry():
     if Browser.__contains__("chr") and not Browser.__contains__("chrome"):
         Browser = (Browser.replace("chr","Chrome"))
     
-    if Browser.__contains__("cr") and not Browser.__contains__("chrome"): 
+    if Browser.__contains__("cr"): 
         Browser = (Browser.replace("cr","Chrome"))
 
 ###Firefox####
     if Browser.__contains__("ff") and not Browser.__contains__("ffox"):
         Browser = (Browser.replace("ff","Firefox"))
        
-    if Browser.__contains__("ffox") and not Browser.__contains__("firefox"):   
+    if Browser.__contains__("ffox"):   
         Browser = (Browser.replace("ffox","Firefox"))
        
         
@@ -64,7 +65,6 @@ def GetBrowserAndCountry():
     if Browser.__contains__("saf") and not Browser.__contains__("safari"):
         Browser = (Browser.replace("saf","Safari"))
 
-        
 ####Edge#####
         
     if Browser.__contains__("edg") and not Browser.__contains__("edge"):
@@ -102,10 +102,14 @@ def CapitaliseEveryFirstLetter(someString): ##Capitalise every first letter ###
         newString =""
         
         for val in someString:
-            newString += val.capitalize()+  " "
             
+            if val.isupper():
+                newString = val +  " "
+            
+            else:
+                newString += val.capitalize()+  " "
+
         return newString
-            
     
 
 
@@ -120,14 +124,13 @@ filepath = os.path.join("C:\\Users\\" + os.getlogin() + "\\Desktop","Imperva - "
 
 #see if file exists, if it doesn't then make one.        
 if Path(filepath).is_file(): 
-    print ("File exist -> " + filepath)
-    f =open(filepath,"a") #by default it is text not binary
+    print ("File exist -> " + filepath) #f =open(filepath,"a") #by default it is text not binary
 else:
-    print ("File does not exist...creating one now... "+ filepath)
+    print ("File does not exist...creating one now... " + filepath)
     f =open(filepath, "x")#for a new file. if file already exists then to append use
 
 
-##########################Body################## ##########################################
+##########################Body############################################################
 while True: ##run infinitely until session timeout
 
 ###Get IP and Error####
@@ -209,3 +212,7 @@ while True: ##run infinitely until session timeout
             pass
         
     PrintAndAppend("\n-------------------------------------------------------------------------------------------------------------------------") ##seperator  
+    
+    ##Open snow programatically
+###webbrowser.open("https://exponentiale.service-now.com/incident.do?sys_id=-1&sysparm_query=active=true&sysparm_stack=incident_list.do?sysparm_query=active=true")
+
