@@ -19,6 +19,7 @@ regex = "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-
 punc_filter = re.compile('([/\s]\s*)')  #Check for whitespaces or backslashes
 
 def check(Ip): ##see if IP is valid using Regex, whitespaces are removed when reading in anyway
+    
     if(re.search(regex, Ip)):
         pass ##no need to do anything if IP is valid
     else:
@@ -104,7 +105,7 @@ def CapitaliseEveryFirstLetter(someString): ##Capitalise every first letter ###
         for val in someString:
             
             if val.isupper():
-                newString = val +  " "
+                newString += val +  " "
             
             else:
                 newString += val.capitalize()+  " "
@@ -135,6 +136,8 @@ while True: ##run infinitely until session timeout
 
 ###Get IP and Error####
     IP = (input("IP address: ?  ").replace(" ",""))
+    IP = IP.replace("-", "") #sometimes they leave a dash at the end
+    
     check(IP)
     Error_type = (input("Error_type ?  ").lower())
     
@@ -212,4 +215,4 @@ while True: ##run infinitely until session timeout
             pass
         
     PrintAndAppend("\n-------------------------------------------------------------------------------------------------------------------------") ##seperator  
-   
+    
