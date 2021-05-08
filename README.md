@@ -11,11 +11,11 @@ FileOutput Version outputs a text file with all logged events but can't be run i
 
 # Browser Shorthands (not req'd but handy):
 
-Chrome - chr,cr
+Chrome - chr,cr,chro,chrom
 
 firefox - ff, ffox
 
-safari - saf
+safari - saf,safa,safar
 
 edge - edg
 
