@@ -78,7 +78,7 @@ enable template toolbar
 
 ![image](https://user-images.githubusercontent.com/55988027/117541308-35e10400-b00b-11eb-9c0e-24862d7276c0.png)
 
-How to create a template.
+Click on the "+" to create a template
 
 ![image](https://user-images.githubusercontent.com/55988027/117541325-485b3d80-b00b-11eb-9fe7-522170fde830.png)
 
