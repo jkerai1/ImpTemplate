@@ -37,6 +37,9 @@ def GetBrowserAndCountry():
 ##########################Clean up shorthand############################### probably a better way to do this using regex#############
     if Browser.__contains__("chr") and not Browser.__contains__("chrome"):
         Browser = (Browser.replace("chr","Chrome"))
+    
+    if Browser.__contains__("cr") and not Browser.__contains__("chrome"):
+        Browser = (Browser.replace("cr","Chrome"))
         
     if Browser.__contains__("chrome"):
         Browser = (Browser.replace("chrome","Chrome"))  # i should probably just use regex to search for "/"
@@ -65,7 +68,7 @@ def GetBrowserAndCountry():
     if Browser.__contains__("opera"):
         Browser = (Browser.replace("opera", "Opera"))
         
-    Country =input ("what is country?   ").upper()
+    Country =input ("what is country?   ").upper().replace(" ","")
     
     return Browser, Country    
 
@@ -89,7 +92,7 @@ else:
 
 ##########################Body################## ##########################################
 while True: ##run infinitely until session timeout
-    IP = (input("IP address: ?  "))
+    IP = (input("IP address: ?  ").replace(" ",""))
     check(IP)
     Error_type = (input("Error_type ?  ").lower())
 
@@ -103,7 +106,7 @@ while True: ##run infinitely until session timeout
         string_allowed = ("\n" + "We can confirm that traffic for the IP provided is seen on the Imperva portal and is allowed.")
         PrintAndAppend(string_allowed)
 
-    elif Error_type.__contains__("inv") or Error_type.contains("cook") or Error_type == "javascript" or Error_type == "js":
+    elif ("inv") in Error_type or ("cook") in Error_type or "java" in Error_type or Error_type == "js":
         Browser, Country = GetBrowserAndCountry()
         Printfunc(IP)
         
@@ -119,15 +122,24 @@ while True: ##run infinitely until session timeout
         BlockedString  =  "We can confirm that traffic for the IP provided is currently blocked due to a Javascript or Browser cookie issue."
         PrintAndAppend(BlockedString)
     
-    elif Error_type.__contains__("kv") or Error_type.__contains__("vpn") or Error_type.__contains__("host"):
+    elif ("kv") in Error_type or Error_type.__contains__("vp") or Error_type.__contains__("host"):
         
         Browser, Country = GetBrowserAndCountry()
         Geo = input("what is geo?   ")
         
+        ##Capitalise every first letter in Geo ###
+        GeoTemp = Geo.split()
+        newGeo =""
+        
+        for val in GeoTemp:
+            newGeo += val.capitalize()+  " "
+            
+        
+        
         Printfunc(IP)
         PrintAndAppend("Browser: " + Browser)
         PrintAndAppend("Country: "+ Country)
-        PrintAndAppend("Geo Org: " + Geo  +"\n")
+        PrintAndAppend("Geo Org: " + newGeo  +"\n")
         PrintAndAppend("We can confirm the IP provided is currently being blocked due to a VPN or a hosted environment.")
      
         
