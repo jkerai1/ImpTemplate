@@ -212,7 +212,4 @@ while True: ##run infinitely until session timeout
             pass
         
     PrintAndAppend("\n-------------------------------------------------------------------------------------------------------------------------") ##seperator  
-    
-    ##Open snow programatically
-###webbrowser.open("https://exponentiale.service-now.com/incident.do?sys_id=-1&sysparm_query=active=true&sysparm_stack=incident_list.do?sysparm_query=active=true")
-
+   
