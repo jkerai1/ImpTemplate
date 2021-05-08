@@ -3,10 +3,10 @@
 Random Test IP: 221.241.59.100
 
 
-One version is just for the online editor i.e. no file output, tested working https://www.online-python.com/ on DAAS
+One version is just for the online editor i.e. no file output, https://www.online-python.com/
 
 
-FileOutput Version outputs a text file with all logged events but can't be run in an online editor (because you can't create the file locally)
+FileOutput Version outputs a text file with all logged events but can't be run in an online editor (because you can't create the file locally). notepad++ recommended for this method as it has silent auto-refresh
 
 
 # Browser Shorthands (not req'd but handy):
