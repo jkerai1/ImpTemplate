@@ -9,7 +9,7 @@ One version is just for the online editor i.e. no file output, https://www.onlin
 FileOutput Version outputs a text file with all logged events but can't be run in an online editor (because you can't create the file locally). notepad++ recommended for this method as it has silent auto-refresh
 
 
-#  Error Shorthands:
+#  Error Shorthands (case insensitive):
 
 not seen - not seen, ns, n,not,no
 
@@ -19,7 +19,9 @@ invalid - inv, invalid, cook, cookie, java, javascript, js
 
 KVDC - kv, kvdc, kvd, vp, vpn, host
 
-# Browser Shorthands (not req'd but handy):
+invalid and kvdc - kvinv
+
+# Browser Shorthands (not req'd but handy,case insensitive):
 
 Chrome - chr,cr,chro,chrom
 
@@ -32,6 +34,8 @@ edge - edg
 opera - op
 
 yandex - yan, ya
+
+F1 app - f1
 
 
 
