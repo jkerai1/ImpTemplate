@@ -54,6 +54,9 @@ f.close() - closes file in case u need to delete the .txt
 
 If you want to reload the .txt automatically on notepad++, go to Settings / Preferences, then the MISC tab and check Update silently under File Status Auto-detection.
 
+you can directly open webpages in python using webbrowser.open("www.google.com") replace google.com with link for "create new incident in snow" in a new block in jupyter for more convienence 
+
+
 ![image](https://user-images.githubusercontent.com/55988027/117534363-fd303300-afe8-11eb-8b48-6020c4d7437a.png)
 
 
