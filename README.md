@@ -11,11 +11,11 @@ FileOutput Version outputs a text file with all logged events but can't be run i
 
 #  Error Shorthands (case insensitive):
 
-not seen - not seen, ns, n,not,no
+Traffic Not Seen - not seen, ns, n,not,no
 
-seen - seen, allo, allowed, allow, s
+Traffic Seen - seen, allo, allowed, allow, s
 
-invalid - inv, invalid, cook, cookie, java, javascript, js, fi, forc
+Traffic blocked due to ForceIdentify OR Invalid-Token - inv, invalid, cook, cookie, java, javascript, js, fi, forc, bloc
 
 KVDC - kv, kvdc, kvd, vp, vpn, host
 
