@@ -15,7 +15,7 @@ Traffic Not Seen - not seen, ns, n,not,no
 
 Traffic Seen - seen, allo, allowed, allow, s
 
-Traffic blocked due to ForceIdentify OR Invalid-Token - inv, invalid, cook, cookie, java, javascript, js, fi, forc, bloc
+Traffic blocked due to ForceIdentify OR Invalid-Token - inv, invalid, cook, cookie, java, javascript, js, fi, forc, bloc
 
 KVDC - kv, kvdc, kvd, vp, vpn, host
 
