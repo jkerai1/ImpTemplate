@@ -52,6 +52,8 @@ To paste as plain text is ctrl shift v to Teams if copying straight from Jupyter
 
 f.close() - closes file in case u need to delete the .txt
 
+Shift + L toggles line numbers in jupyter
+
 
 
 you can directly open webpages in python using webbrowser.open("www.google.com") replace google.com with link for "create new incident in snow" in a new block in jupyter for more convienence 
