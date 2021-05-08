@@ -15,11 +15,13 @@ not seen - not seen, ns, n,not,no
 
 seen - seen, allo, allowed, allow, s
 
-invalid - inv, invalid, cook, cookie, java, javascript, js
+invalid - inv, invalid, cook, cookie, java, javascript, js, fi, forc
 
 KVDC - kv, kvdc, kvd, vp, vpn, host
 
-invalid and kvdc - kvinv
+	Special Cases:
+	
+	invalid and kvdc - kvinv
 
 # Browser Shorthands (not req'd but handy,case insensitive):
 
