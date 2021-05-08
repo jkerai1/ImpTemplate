@@ -23,6 +23,11 @@ def check(Ip): ##see if IP is valid using Regex, whitespaces are removed when re
     if(re.search(regex, Ip)):
         pass ##no need to do anything if IP is valid
     else:
+        
+        if Ip.__contains__("sno"): ##shortcut to snow
+            
+            print("insert your snow link here using webbrowser.open(""www."")") ##if using jupyter adding to a seperate block would be better
+            
         f.close() #close file stream
         sys.exit("Invalid IP address")
         
@@ -199,7 +204,7 @@ while True: ##run infinitely until session timeout
         PrintAndAppend("Country: "+ Country)
         PrintAndAppend("Geo Org: " + Geo  +"\n")
         PrintAndAppend("We can confirm the IP provided is currently being blocked due to a VPN or a hosted environment.")
-     
+    
         
   ##at this point I have all shorthand codes i think so i could use a dictionary.........
        
@@ -216,3 +221,6 @@ while True: ##run infinitely until session timeout
         
     PrintAndAppend("\n-------------------------------------------------------------------------------------------------------------------------") ##seperator  
     
+    ##useful testing references:
+    #Random Test IP:     221.241.59.100
+    #f.close()
