@@ -95,4 +95,6 @@ Click on the "+" to create a template
 
 Assigning to yourself does not seem to work at the moment.
 
+Fill in company name(s) as apprioprate 
+
 ![117541762-50b47800-b00d-11eb-8d5b-b2a8df0a70f5](https://user-images.githubusercontent.com/55988027/117545567-3fc03280-b01e-11eb-9ee2-0fbaa9e24f2e.png)
