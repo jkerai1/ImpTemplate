@@ -101,7 +101,12 @@ while True: ##run infinitely until session timeout
         print("\n" + "We can confirm that no traffic is seen on the Imperva portal for the IP provided.")
     
     elif Error_type == "seen" or Error_type.__contains__("allo") or Error_type == "s":
-        Printfunc(IP)
+        Browser, Country = GetBrowserAndCountry()
+	
+	Printfunc(IP)
+	print("Browser: " + Browser) ##i could block this into one function if i really wanted to....
+        print("Country: "+ Country)
+	
         print("\n" + "We can confirm that traffic for the IP provided is seen on the Imperva portal and is allowed.")
 	
 	##Special Cases, put first because order matters in Python:
@@ -124,7 +129,7 @@ while True: ##run infinitely until session timeout
         print("Country: "+ Country + "\n")
         print("We can confirm that traffic for the IP provided is currently blocked due to a Javascript or Browser cookie issue.")
     
-    elif Error_type.__contains__("kv") or Error_type.__contains__("vp") or Error_type.__contains__("host"):
+    elif Error_type.__contains__("kv") or Error_type.__contains__("vp") or Error_type.__contains__("host") or Error_type.__contains__("auto"):
         Browser, Country = GetBrowserAndCountry()
         Geo = input("what is geo?   ")
 	Geo = CapitaliseEveryFirstLetter(Geo)
