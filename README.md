@@ -74,6 +74,16 @@ If you want to reload the .txt automatically on notepad++, go to Settings / Pref
 
 
 # Snow Stuff
+enable template toolbar
+
+![image](https://user-images.githubusercontent.com/55988027/117541308-35e10400-b00b-11eb-9c0e-24862d7276c0.png)
+
+How to create a template.
+
+![image](https://user-images.githubusercontent.com/55988027/117541325-485b3d80-b00b-11eb-9fe7-522170fde830.png)
 
 
-![MicrosoftTeams-image](https://user-images.githubusercontent.com/55988027/117541242-db47a800-b00a-11eb-8bd1-f0cdcdad3edf.png)
+Assigning to yourself does not seem to work at the moment.
+
+![MicrosoftTeams-image](https://user-images.githubusercontent.com/55988027/117541284-12b65480-b00b-11eb-8d57-af95fb0c61a7.png)
+
