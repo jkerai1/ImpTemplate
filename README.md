@@ -42,7 +42,7 @@ F1 app - f1
 
 
 
-		Useful notes:
+# Useful Notes:
 		
 Program works in Juypter notebook
 
