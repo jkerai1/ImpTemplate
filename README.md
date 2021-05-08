@@ -16,7 +16,7 @@ One version is just for the online editor i.e. no file output, tested working ht
 FileOutput Version outputs a text file with all logged events but can't be run in an online editor (because you can't create the file locally)
 
 
-Useful notes:
+		Useful notes:
 
 Use ctrl + c to interrupt python terminal
 
