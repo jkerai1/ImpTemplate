@@ -1,19 +1,32 @@
-# ImpTemplate ##Random Test IP: 221.241.59.100
+# ImpTemplate 
 
-Features:
-
--clean up shorthand
-
--autocapitialization and removal of whitespaces
-
--Regex to validate IP address
-
+#Random Test IP: 221.241.59.100
 
 
 One version is just for the online editor i.e. no file output, tested working https://www.online-python.com/ on DAAS
 
 
 FileOutput Version outputs a text file with all logged events but can't be run in an online editor (because you can't create the file locally)
+
+
+#Browser Shorthands (not req'd but handy):
+
+Chrome - chr,cr
+firefox - ff, ffox
+safari - saf
+edge - edg
+opera - op
+yandex - yan, ya
+
+#Error Shorthands:
+
+not seen - not seen, ns, n,not,no
+seen - seen,allo,allowed,allow, s
+invalid - inv,invalid,cook,cookie,java,javascript,js
+KVDC - kv,kvdc,kvd,vp,vpn,host
+
+Nothing for Geo Org yet except for stripping left most spaces
+
 
 
 		Useful notes:
@@ -26,20 +39,11 @@ If you want to reload the .txt automatically on notepad++, go to Settings / Pref
 
 To paste as plain text is ctrl shift v
 
-Browser Shorthands:
 
-Chrome - chr,cr
-firefox - ff, ffox
-safari - saf
-edge - edg
-opera - op
-yandex - yan, ya
+#Features:
 
-Error Shorthands:
+-clean up shorthand
 
-not seen - not seen, ns, n,not,no
-seen - seen,allo,allowed,allow, s
-invalid - inv,invalid,cook,cookie,java,javascript,js
-KVDC - kv,kvdc,kvd,vp,vpn,host
+-autocapitialization and removal of whitespaces
 
-Nothing for Geo Org yet except for stripping left most spaces
+-Regex to validate IP address
