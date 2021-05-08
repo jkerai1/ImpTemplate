@@ -41,6 +41,9 @@ F1 app - f1
 
 
 		Useful notes:
+		
+Program works in Juypter notebook
+
 To paste as plain text is ctrl shift v to Teams
 
 Use ctrl + c to interrupt python terminal
