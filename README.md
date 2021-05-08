@@ -1,13 +1,10 @@
-# ImpTemplate
-
-Evidently I am rusty with python....
-
+# ImpTemplate ##Random Test IP: 221.241.59.100
 
 Features:
 
 -clean up shorthand
 
--autocapitialization
+-autocapitialization and removal of whitespaces
 
 -Regex to validate IP address
 
@@ -16,13 +13,13 @@ Features:
 One version is just for the online editor i.e. no file output, tested working https://www.online-python.com/ on DAAS
 
 
-FileOutput Version outputs a text file with all logged events but can't be run in an online editor
+FileOutput Version outputs a text file with all logged events but can't be run in an online editor (because you can't create the file locally)
 
-##Random Test IP: 221.241.59.100
 
-Use ctrl + c to interrup python terminal
+Useful notes:
 
+Use ctrl + c to interrupt python terminal
 
 f.close() - closes file in case u need to delete the .txt
 
-If you want to reload automatically on notepad++, go to Settings / Preferences, then the MISC tab and uncheck Update silently under File Status Auto-detection.
+If you want to reload the .txt automatically on notepad++, go to Settings / Preferences, then the MISC tab and uncheck Update silently under File Status Auto-detection.
