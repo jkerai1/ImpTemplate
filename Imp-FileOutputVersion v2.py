@@ -1,6 +1,8 @@
 #Random Test IP:     221.241.59.100
 #f.close()
 
+
+#################     Imports         #############################
 import re #Regex
 import os #for getting username
 import datetime #get datestamp
@@ -10,7 +12,7 @@ import sys
 
 regex = "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$"
 
-punc_filter = re.compile('([/\s]\s*)')
+punc_filter = re.compile('([/\s]\s*)')  #Check for whitespaces or backslashes
 
 def check(Ip): ##see if IP is valid using Regex, whitespaces are removed when reading in anyway
     if(re.search(regex, Ip)):
@@ -37,7 +39,7 @@ def PrintAndAppend(stringtoappend):
 def GetBrowserAndCountry():
     Browser = input("what is browser?   ").lower()
     
-##Clean up shorthand############################### probably a better way to do this using regex, dictionary and .split()#############
+###  Clean up shorthand############################### probably a better way to do this using regex, dictionary and .split()#############
 
 ###Chrome###
     if Browser.__contains__("chr") and not Browser.__contains__("chrome"):
@@ -124,12 +126,13 @@ else:
 
 ##########################Body################## ##########################################
 while True: ##run infinitely until session timeout
+
+###Get IP and Error####
     IP = (input("IP address: ?  ").replace(" ",""))
     check(IP)
     Error_type = (input("Error_type ?  ").lower())
     
-    
-    
+    ##if statement block to check to see which error we have##########
 
     if Error_type == "ns" or Error_type == "not seen" or Error_type == "n" or Error_type == "not" or Error_type == "no":
         Printfunc(IP)
@@ -187,7 +190,10 @@ while True: ##run infinitely until session timeout
         PrintAndAppend("Country: "+ Country)
         PrintAndAppend("Geo Org: " + Geo  +"\n")
         PrintAndAppend("We can confirm the IP provided is currently being blocked due to a VPN or a hosted environment.")
-    
+     
+        
+  ##at this point I have all shorthand codes i think so i could use a dictionary.........
+       
         
     else:
         print("incorrect option \n Options are: \n\n - NS for not seen \n\n - Seen or s or allowed \n\n - inv/cookie/javascript/js \n\n -Kv/vpn/host.\n for further info please see readme https://github.com/jkerai1/ImpTemplate/blob/main/README.md ")
