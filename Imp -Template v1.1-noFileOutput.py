@@ -116,7 +116,7 @@ while True: ##run infinitely until session timeout
         print("Geo Org: " + Geo  +"\n")
         print("We can confirm the IP provided is currently being blocked due to a VPN or a hosted environment and blocked due to a Javascript or Browser cookie issue.")
 
-    elif ("inv") in Error_type or ("cook") in Error_type or "java" in Error_type or Error_type == "js" or Error_type.__contains__("forc") or Error_type == "fi":
+    elif ("inv") in Error_type or ("cook") in Error_type or "java" in Error_type or Error_type == "js" or Error_type.__contains__("forc") or Error_type == "fi" or Error_type.__contains__("bloc"):
         Browser, Country = GetBrowserAndCountry()
         Printfunc(IP)
         print("Browser: " + Browser)
