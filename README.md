@@ -46,9 +46,9 @@ F1 app - f1
 		
 Program is easiest to use in Juypter notebook. Jupyter also lets you open .txt as well
 
-ctrl + c interrupts python terminal but ctrl shift c (copying as raw text) does not 
+ctrl + c interrupts python terminal but ctrl shift c (copying as raw text) does not (does not apply to Jupyter)
 
-To paste as plain text is ctrl shift v to Teams
+To paste as plain text is ctrl shift v to Teams if copying straight from Jupyter notebook<<<<<<<<<<<
 
 f.close() - closes file in case u need to delete the .txt
 
