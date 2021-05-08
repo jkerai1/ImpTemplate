@@ -44,7 +44,7 @@ F1 app - f1
 
 # Useful Notes:
 		
-Program works in Juypter notebook quite well
+Program is easiest to use in Juypter notebook. Jupyter also lets you open .txt as well
 
 ctrl + c interrupts python terminal but ctrl shift c (copying as raw text) does not 
 
