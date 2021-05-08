@@ -1,4 +1,5 @@
 #Random Test IP:     221.241.59.100
+#f.close()
 
 import re #Regex
 import os #for getting username
@@ -136,7 +137,12 @@ while True: ##run infinitely until session timeout
         PrintAndAppend(string_to_append)
     
     elif Error_type == "seen" or Error_type.__contains__("allo") or Error_type == "s":
+        
+        Browser,Country = GetBrowserAndCountry()
         Printfunc(IP)
+        PrintAndAppend("Browser: " + Browser)
+        PrintAndAppend("Country: "+ Country)
+        
         string_allowed = ("\n" + "We can confirm that traffic for the IP provided is seen on the Imperva portal and is allowed.")
         PrintAndAppend(string_allowed)
         
@@ -155,7 +161,7 @@ while True: ##run infinitely until session timeout
 
 
 ###Normal Cases####
-    elif ("inv") in Error_type or ("cook") in Error_type or "java" in Error_type or Error_type == "js" or Error_type.__contains__("forc") or Error_type == "fi" or Error_type.__contains__("bloc")  or Error_type.__contains__("tok"):
+    elif ("inv") in Error_type or ("cook") in Error_type or "java" in Error_type or Error_type == "js" or Error_type.__contains__("forc") or Error_type == "fi" or Error_type.__contains__("bloc") or Error_type.__contains__("tok"):
         Browser, Country = GetBrowserAndCountry()
         Printfunc(IP)
         
@@ -171,7 +177,7 @@ while True: ##run infinitely until session timeout
         BlockedString  =  "We can confirm that traffic for the IP provided is currently blocked due to a Javascript or Browser cookie issue."
         PrintAndAppend(BlockedString)
     
-    elif ("kv") in Error_type or Error_type.__contains__("vp") or Error_type.__contains__("host"):
+    elif ("kv") in Error_type or Error_type.__contains__("vp") or Error_type.__contains__("host") or Error_type.__contains__("auto"):
         
         Browser, Country = GetBrowserAndCountry()
         Geo = input("what is geo?   ").lstrip() ##remove left most spaces
@@ -181,10 +187,7 @@ while True: ##run infinitely until session timeout
         PrintAndAppend("Country: "+ Country)
         PrintAndAppend("Geo Org: " + Geo  +"\n")
         PrintAndAppend("We can confirm the IP provided is currently being blocked due to a VPN or a hosted environment.")
-     
-        
-  
-       
+    
         
     else:
         print("incorrect option \n Options are: \n\n - NS for not seen \n\n - Seen or s or allowed \n\n - inv/cookie/javascript/js \n\n -Kv/vpn/host.\n for further info please see readme https://github.com/jkerai1/ImpTemplate/blob/main/README.md ")
