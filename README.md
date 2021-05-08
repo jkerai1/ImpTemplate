@@ -73,8 +73,10 @@ If you want to reload the .txt automatically on notepad++, go to Settings / Pref
 - Punctuation stripping on Country line
 
 
-# Snow Stuff
-enable template toolbar
+# Snow Misc
+
+
+Enable template toolbar
 
 ![image](https://user-images.githubusercontent.com/55988027/117541308-35e10400-b00b-11eb-9c0e-24862d7276c0.png)
 
