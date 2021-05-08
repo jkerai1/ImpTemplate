@@ -81,19 +81,24 @@ def GetBrowserAndCountry():
     return Browser, Country    
 
 
-
 def CapitaliseEveryFirstLetter(someString): ##Capitalise every first letter ###
         someString = someString.split()
         newString =""
         
         for val in someString:
-            newString += val.capitalize()+  " "
             
+            if val.isupper():
+                newString += val +  " "
+            
+            else:
+                newString += val.capitalize()+  " "
+
         return newString
 #####################################################################################################################################################    
 
 while True: ##run infinitely until session timeout
     IP = (input("IP address: ?  ").replace(" ",""))
+    IP = IP.replace("-", "") #sometimes they leave a dash at the end
     check(IP)
     Error_type = (input("Error_type ? ").lower())
 
