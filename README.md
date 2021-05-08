@@ -71,3 +71,9 @@ If you want to reload the .txt automatically on notepad++, go to Settings / Pref
 - Regex to validate IP address
 
 - Punctuation stripping on Country line
+
+
+# Snow Stuff
+
+
+![MicrosoftTeams-image](https://user-images.githubusercontent.com/55988027/117541242-db47a800-b00a-11eb-8bd1-f0cdcdad3edf.png)
