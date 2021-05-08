@@ -20,3 +20,6 @@ FileOutput Version outputs a text file with all logged events but can't be run i
 
 ##Random Test IP: 221.241.59.100
 #use ctrl + c to interrup python terminal
+
+
+f.close() - closes file in case u need to delete the .txt
