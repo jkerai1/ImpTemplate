@@ -12,20 +12,27 @@ FileOutput Version outputs a text file with all logged events but can't be run i
 # Browser Shorthands (not req'd but handy):
 
 Chrome - chr,cr
+
 firefox - ff, ffox
+
 safari - saf
+
 edge - edg
+
 opera - op
+
 yandex - yan, ya
 
-#Error Shorthands:
+#  Error Shorthands:
 
 not seen - not seen, ns, n,not,no
+
 seen - seen,allo,allowed,allow, s
+
 invalid - inv,invalid,cook,cookie,java,javascript,js
+
 KVDC - kv,kvdc,kvd,vp,vpn,host
 
-Nothing for Geo Org yet except for stripping left most spaces
 
 
 
