@@ -1,10 +1,7 @@
-##Random Test IP: 221.241.59.100
-
 import re
 import sys
-#import webbrowser
 
-##Random Test IP: 221.241.59.100
+
 ##this file can be run in an online editor such as https://www.online-python.com/
 
 regex = "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$"
@@ -110,17 +107,14 @@ while True: ##run infinitely until session timeout
     
     elif Error_type == "seen" or Error_type.__contains__("allo") or Error_type == "s":
         Browser, Country = GetBrowserAndCountry()
-	
-	Printfunc(IP)
-	print("Browser: " + Browser) ##i could block this into one function if i really wanted to....
+        Printfunc(IP)
+        print("Browser: " + Browser)
         print("Country: "+ Country)
-	
         print("\n" + "We can confirm that traffic for the IP provided is seen on the Imperva portal and is allowed.")
 	
 	##Special Cases, put first because order matters in Python:
        
     elif ("kvinv") in Error_type: ##both 
-        
         Browser, Country = GetBrowserAndCountry()
         Geo = input("what is geo?   ").lstrip() ##remove left most spaces
         Geo = CapitaliseEveryFirstLetter(Geo)
@@ -140,7 +134,7 @@ while True: ##run infinitely until session timeout
     elif Error_type.__contains__("kv") or Error_type.__contains__("vp") or Error_type.__contains__("host") or Error_type.__contains__("auto"):
         Browser, Country = GetBrowserAndCountry()
         Geo = input("what is geo?   ")
-	Geo = CapitaliseEveryFirstLetter(Geo)
+        Geo = CapitaliseEveryFirstLetter(Geo)
         Printfunc(IP)
         print("Browser: " + Browser)
         print("Country: "+ Country)
@@ -149,5 +143,7 @@ while True: ##run infinitely until session timeout
     
     else:
           print("\n incorrect option \n Options are: \n\n - not seen - not seen,ns,n.not,n \n\n - Seen - s,allow,allowed,s \n\n - traffic blocked - inv,invalid, cook, cookie, java, javascript, js, fi, forc, bloc, tok \n\n -KVDC - kv, kvdc, kvd, vp, vpn, host \n \nfor further info please see readme https://github.com/jkerai1/ImpTemplate/blob/main/README.md ")
-        
+    
+    count += 1    
     print("\n-------------------------------------------------------------------------------------------------------------------------")    
+##Random Test IP: 221.241.59.100
