@@ -44,17 +44,20 @@ F1 app - f1
 
 # Useful Notes:
 		
-Program is easiest to use in Juypter notebook. Jupyter also lets you open .txt as well
+Program is easiest to use in Juypter notebook. Jupyter also lets you open .txt as well if you want that functionality
 
-ctrl + c interrupts python terminal but ctrl shift c (copying as raw text) does not (does not apply to Jupyter)
-
-To paste as plain text is ctrl shift v to Teams if copying straight from Jupyter notebook<<<<<<<<<<<
+ctrl + c interrupts python terminal but ctrl shift c (copying as raw text) does not (does not apply to jupyter notebook but does for the Jupyter Terminal)
 
 f.close() - closes file in case u need to delete the .txt
 
+
+# Jupyter Notebook Users
+
+ctrl + enter is run a block
+
 Shift + L toggles line numbers in jupyter
 
-
+To paste as plain text is ctrl shift v to Teams if copying straight from Jupyter notebook     <<<
 
 you can directly open webpages in python using webbrowser.open("www.google.com") replace google.com with link for "create new incident in snow" in a new block in jupyter for more convienence 
 
