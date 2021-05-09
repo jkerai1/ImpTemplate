@@ -141,7 +141,7 @@ while True: ##run infinitely until session timeout
 
 ###Get IP and Error####
     
-    IP = (input("IP address: ?  ").replace(" ",""))
+    IP = (input("\nIP address: ?  ").replace(" ",""))
     IP = IP.replace("-", "") #sometimes they leave a dash at the end
     
     check(IP)
@@ -150,6 +150,7 @@ while True: ##run infinitely until session timeout
     ##if statement block to check to see which error we have##########
 
     if Error_type == "ns" or Error_type == "not seen" or Error_type == "n" or Error_type == "not" or Error_type == "no":
+        PrintAndAppend("\n" + str(count) + " -------------------------------------------------------------------------------------------------------------------------")
         Printfunc(IP)
         string_to_append  = ("\n" + "We can confirm that no traffic is seen on the Imperva portal for the IP provided.")
         PrintAndAppend(string_to_append)
@@ -157,6 +158,10 @@ while True: ##run infinitely until session timeout
     elif Error_type == "seen" or Error_type.__contains__("allo") or Error_type == "s":
         
         Browser,Country = GetBrowserAndCountry()
+        
+        
+        PrintAndAppend("\n" + str(count) + " -------------------------------------------------------------------------------------------------------------------------") ##seperator
+        
         Printfunc(IP)
         PrintAndAppend("Browser: " + Browser)
         PrintAndAppend("Country: "+ Country)
@@ -171,6 +176,7 @@ while True: ##run infinitely until session timeout
         Browser, Country = GetBrowserAndCountry()
         Geo = input("what is geo?   ").lstrip() ##remove left most spaces
         Geo = CapitaliseEveryFirstLetter(Geo)
+        PrintAndAppend("\n" + str(count) + " -------------------------------------------------------------------------------------------------------------------------") ##seperator
         Printfunc(IP)
         PrintAndAppend("Browser: " + Browser) ##i could block this into one function if i really wanted to....
         PrintAndAppend("Country: "+ Country)
@@ -181,8 +187,9 @@ while True: ##run infinitely until session timeout
 ###Normal Cases####
     elif ("inv") in Error_type or ("cook") in Error_type or "java" in Error_type or Error_type == "js" or Error_type.__contains__("forc") or Error_type == "fi" or Error_type.__contains__("bloc") or Error_type.__contains__("tok"):
         Browser, Country = GetBrowserAndCountry()
+       
+        PrintAndAppend("\n" + str(count) + " -------------------------------------------------------------------------------------------------------------------------") ##seperator
         Printfunc(IP)
-        
         ##Browser
         browserString = ("Browser: " + Browser) 
         PrintAndAppend(browserString)
@@ -200,6 +207,7 @@ while True: ##run infinitely until session timeout
         Browser, Country = GetBrowserAndCountry()
         Geo = input("what is geo?   ").lstrip() ##remove left most spaces
         Geo = CapitaliseEveryFirstLetter(Geo)
+        PrintAndAppend("\n" + str(count) + " -------------------------------------------------------------------------------------------------------------------------") ##seperator
         Printfunc(IP)
         PrintAndAppend("Browser: " + Browser)
         PrintAndAppend("Country: "+ Country)
@@ -219,9 +227,9 @@ while True: ##run infinitely until session timeout
             webbrowser.open("https://github.com/jkerai1/ImpTemplate/blob/main/README.md")
         else:
             pass
-        
-    PrintAndAppend("\n" + str(count) + " -------------------------------------------------------------------------------------------------------------------------") ##seperator  
+        #PrintAndAppend("\n" + str(count) + " -------------------------------------------------------------------------------------------------------------------------") ##seperator  
 
+    
     count+=1
     
     ##useful testing references:
