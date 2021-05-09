@@ -18,6 +18,7 @@ def check(Ip): ##see if IP is valid using Regex
         
         
 def Printfunc(IP):
+    print("\n" + str(count) + " -------------------------------------------------------------------------------------------------------------------------")
     print("\n" + "IP: "  + IP)
   
 def GetBrowserAndCountry():
@@ -95,6 +96,7 @@ def CapitaliseEveryFirstLetter(someString): ##Capitalise every first letter ###
 
         return newString
 #####################################################################################################################################################    
+count = 1
 
 while True: ##run infinitely until session timeout
     IP = (input("IP address: ?  ").replace(" ",""))
