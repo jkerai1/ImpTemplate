@@ -135,7 +135,7 @@ def CapitaliseEveryFirstLetter(someString): ##Capitalise every first letter ###
 ###########Create New file or check if one exists############################
 
 date =  datetime.datetime.now().strftime("%d-%m-%y")
-filepath = os.path.join("C:\\Users\\" + os.getlogin() + "\\Desktop","Imperva - " + date + ".txt") ##get user name. ##Syntax:  os.path.join(dir_name, base_filename + "." + filename_suffix)
+filepath = os.path.join("C:\\Users\\" + os.getlogin() + "\\Desktop","Imper - " + date + ".txt") ##get user name. ##Syntax:  os.path.join(dir_name, base_filename + "." + filename_suffix)
 count = 1
 #note can easily be changed to a different file format like .doc using a library
 
