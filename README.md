@@ -59,7 +59,7 @@ Ctrl + enter is run a block
 
 Shift + L toggles line numbers in jupyter - useful to debugging
 
-you can directly open webpages in python using webbrowser.open("www.google.com") replace google.com with link for "create new incident in snow" in a new block in jupyter for more convienence 
+Bottom blocks are buttons to take you to a website, set accordingly
 
 ![image](https://user-images.githubusercontent.com/55988027/117545508-f5d74c80-b01d-11eb-8e07-e362191f7bb9.png)
 
