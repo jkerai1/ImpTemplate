@@ -124,7 +124,7 @@ def CapitaliseEveryFirstLetter(someString): ##Capitalise every first letter ###
 
 date =  datetime.datetime.now().strftime("%d-%m-%y")
 filepath = os.path.join("C:\\Users\\" + os.getlogin() + "\\Desktop","Imperva - " + date + ".txt") ##get user name. ##Syntax:  os.path.join(dir_name, base_filename + "." + filename_suffix)
-
+count = 1
 #note can easily be changed to a different file format like .doc using a library
 
 
@@ -140,6 +140,7 @@ else:
 while True: ##run infinitely until session timeout
 
 ###Get IP and Error####
+    
     IP = (input("IP address: ?  ").replace(" ",""))
     IP = IP.replace("-", "") #sometimes they leave a dash at the end
     
@@ -219,7 +220,9 @@ while True: ##run infinitely until session timeout
         else:
             pass
         
-    PrintAndAppend("\n-------------------------------------------------------------------------------------------------------------------------") ##seperator  
+    PrintAndAppend("\n" + str(count) + " -------------------------------------------------------------------------------------------------------------------------") ##seperator  
+
+    count+=1
     
     ##useful testing references:
     #Random Test IP:     221.241.59.100
