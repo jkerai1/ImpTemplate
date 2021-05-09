@@ -7,11 +7,16 @@
 
 #################     Imports         #############################
 import re #Regex
+
 import os #for getting username
 import datetime #get datestamp
 from pathlib import Path #for seeing if file exists or not
 import sys
 import webbrowser
+
+
+#from ipywidgets import Layout
+
 #import snow ##I have a seperate script to open snow  , comment this out 
 
 regex = "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$"
@@ -28,7 +33,7 @@ def check(Ip): ##see if IP is valid using Regex, whitespaces are removed when re
             
             print("insert your snow link here using webbrowser.open(""www."")") ##if using jupyter adding to a seperate block would be better
             
-        f.close() #close file stream
+       # f.close() #close file stream
         sys.exit("Invalid IP address")
         
         
@@ -68,9 +73,13 @@ def GetBrowserAndCountry():
         
 ###Safari#######        
 
-    if Browser.__contains__("saf") and not Browser.__contains__("safari"):
+    if Browser.__contains__("saf") and not Browser.__contains__("safa"):
         Browser = (Browser.replace("saf","Safari"))
 
+        
+    if Browser.__contains__("safa") and not Browser.__contains__("safari"):
+        Browser = (Browser.replace("safa","Safari"))
+        
 ####Edge#####
         
     if Browser.__contains__("edg") and not Browser.__contains__("edge"):
@@ -115,6 +124,9 @@ def CapitaliseEveryFirstLetter(someString): ##Capitalise every first letter ###
             else:
                 newString += val.capitalize()+  " "
 
+                
+                
+                
         return newString
     
 
@@ -176,6 +188,10 @@ while True: ##run infinitely until session timeout
         Browser, Country = GetBrowserAndCountry()
         Geo = input("what is geo?   ").lstrip() ##remove left most spaces
         Geo = CapitaliseEveryFirstLetter(Geo)
+        
+        if Geo == "Servermania": ##weird case that doesnt have space before caps so algorithm ignores it
+            Geo = "ServerMania"
+            
         PrintAndAppend("\n" + str(count) + " -------------------------------------------------------------------------------------------------------------------------") ##seperator
         Printfunc(IP)
         PrintAndAppend("Browser: " + Browser) ##i could block this into one function if i really wanted to....
@@ -207,6 +223,11 @@ while True: ##run infinitely until session timeout
         Browser, Country = GetBrowserAndCountry()
         Geo = input("what is geo?   ").lstrip() ##remove left most spaces
         Geo = CapitaliseEveryFirstLetter(Geo)
+        
+        if Geo == "Servermania": ##weird case that doesnt have space before caps so algorithm ignores it
+            Geo = "ServerMania"
+    
+            
         PrintAndAppend("\n" + str(count) + " -------------------------------------------------------------------------------------------------------------------------") ##seperator
         Printfunc(IP)
         PrintAndAppend("Browser: " + Browser)
@@ -235,3 +256,5 @@ while True: ##run infinitely until session timeout
     ##useful testing references:
     #Random Test IP:     221.241.59.100
     #f.close()
+    
+    #logged = 
