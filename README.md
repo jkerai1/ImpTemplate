@@ -53,11 +53,11 @@ f.close() - closes file in case u need to delete the .txt
 
 # Jupyter Notebook Users
 
-ctrl + enter is run a block
-
-Shift + L toggles line numbers in jupyter
-
 To paste as plain text is ctrl shift v to Teams if copying straight from Jupyter notebook     <<<
+
+Ctrl + enter is run a block
+
+Shift + L toggles line numbers in jupyter - useful to debugging
 
 you can directly open webpages in python using webbrowser.open("www.google.com") replace google.com with link for "create new incident in snow" in a new block in jupyter for more convienence 
 
