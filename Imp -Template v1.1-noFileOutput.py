@@ -53,8 +53,13 @@ def GetBrowserAndCountry():
     
 ###opera###        
 
-    if ("op" in Browser) and not Browser.__contains__("opera"):
+    if ("op" in Browser) and not Browser.__contains__("ope"):
         Browser = (Browser.replace("op", "Opera"))
+	
+    if ("ope" in Browser) and not Browser.__contains__("opera"):
+        Browser = (Browser.replace("ope", "Opera"))
+	
+    
 ###Yandex###
 
     if "ya" in Browser and not Browser.__contains__("yandex") and not Browser.__contains__("yan"):
