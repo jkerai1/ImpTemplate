@@ -47,7 +47,9 @@ yandex - yan, ya
 F1 app - f1
 
 
+# AutoCopy
 
+In this version, the code copies the last investigation to your clipboard automatically as plain text thus you don't need to remember to put Ctrl + shift +V to paste into teams. In this version you will have to paste after every investigation as only one entry can be stored in the clipboard
 
 # Useful Notes:
 		
