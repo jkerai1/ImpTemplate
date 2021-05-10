@@ -23,6 +23,10 @@ KVDC - kv, kvdc, kvd, vp, vpn, host
 	Special Cases:
 	
 	invalid and kvdc - kvinv
+	
+	force identity and allowed - pfi,partialforce
+	
+	partial blocked - pb,partialblock 
 
 # Browser Shorthands (not req'd but handy,case insensitive):
 
