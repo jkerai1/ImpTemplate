@@ -1,16 +1,13 @@
 # Imp Template Generator 
 
-Random Test IP: 221.241.59.100
+"Imp -Template v1.1-noFileOutput.py" is just for the online editor i.e. no file output, https://www.online-python.com/
 
 
-One version is just for the online editor i.e. no file output, https://www.online-python.com/
+FileOutput Version(s) outputs a text file with all logged events but can't be run in an online editor (because you can't create the file locally). notepad++ recommended for this method as it has silent auto-refresh. (if you want to work that way that is)
 
-
-FileOutput Version outputs a text file with all logged events but can't be run in an online editor (because you can't create the file locally). notepad++ recommended for this method as it has silent auto-refresh
+.ipynb code also outputs a text file also, this version has nicer readability, checkboxes but can only be run on Jupyter Notebook
 
 AutoCopy version requires pyclip. To install "pip install pyclip" in your python terminal (or anaconda prompt)
-
-ipynb code also outputs a text file
 
 #  Error Shorthands (case insensitive):
 
