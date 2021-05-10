@@ -123,6 +123,31 @@ while True: ##run infinitely until session timeout
         print("Country: "+ Country)
         print("Geo Org: " + Geo  +"\n")
         print("We can confirm the IP provided is currently being blocked due to a VPN or a hosted environment and blocked due to a Javascript or Browser cookie issue.")
+	
+    elif ("pb") in Error_type or Error_type == ("partialblock"): ##partial block
+        Browser, Country = GetBrowserAndCountry()
+        Geo = input("what is geo?   ").lstrip() ##remove left most spaces
+        Geo = CapitaliseEveryFirstLetter(Geo)
+	
+	if Geo == ("Servermania"): ##weird case that doesnt have space before caps so algorithm ignores it
+        	Geo = "ServerMania"
+	
+        Printfunc(IP)
+        print("Browser: " + Browser) ##i could block this into one function if i really wanted to....
+        print("Country: "+ Country)
+        print("Geo Org: " + Geo  +"\n")
+        print("We can confirm that some traffic from the IP provided is currently being blocked due to a VPN or a hosted environment and blocked due to a Javascript or Browser cookie issue. The rest of the traffic has been allowed.")	
+	
+    elif Error_type.__contains__("pfi") or Error_type == "partialforce": #partial force
+	
+	Browser, Country = GetBrowserAndCountry()
+        print("\n" + str(count) + " -------------------------------------------------------------------------------------------------------------------------") ##seperator
+        Printfunc(IP)
+        print("Browser: " + Browser) 
+        print("Country: "+ Country +"\n")
+        print("We can confirm that some traffic for that IP provided was blocked due to a Javascript or Browser cookie issue. The rest of the traffic has been allowed.")
+      
+	
 
     elif ("inv") in Error_type or ("cook") in Error_type or "java" in Error_type or Error_type == "js" or Error_type.__contains__("forc") or Error_type == "fi" or Error_type.__contains__("bloc") or Error_type.__contains__("tok"):
         Browser, Country = GetBrowserAndCountry()
