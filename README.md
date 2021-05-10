@@ -8,6 +8,8 @@ One version is just for the online editor i.e. no file output, https://www.onlin
 
 FileOutput Version outputs a text file with all logged events but can't be run in an online editor (because you can't create the file locally). notepad++ recommended for this method as it has silent auto-refresh
 
+AutoCopy version requires pyclip. To install "pip install pyclip" in your python terminal (or anaconda prompt)
+
 ipynb code also outputs a text file
 
 #  Error Shorthands (case insensitive):
