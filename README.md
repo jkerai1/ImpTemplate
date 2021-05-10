@@ -11,7 +11,7 @@ AutoCopy version requires pyclip. To install "pip install pyclip" in your python
 
 ![image](https://user-images.githubusercontent.com/55988027/117706200-e8a89200-b1c4-11eb-9756-b29fd47579a0.png)
 
-#  Error Shorthands (case insensitive):
+#  Error Shorthands (case insensitive) For Non-GUI users:
 
 Traffic Not Seen - not seen, ns, n,not,no
 
@@ -29,7 +29,7 @@ KVDC - kv, kvdc, kvd, vp, vpn, host
 	
 	partial blocked - pb,partialblock 
 
-# Browser Shorthands (not req'd but handy,case insensitive):
+# Browser Shorthands (not req'd but handy,case insensitive) Non GUI users:
 
 Chrome - chr,cr,chro,chrom
 
