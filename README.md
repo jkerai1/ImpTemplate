@@ -9,6 +9,8 @@ FileOutput Version(s) outputs a text file with all logged events but can't be ru
 
 AutoCopy version requires pyclip. To install "pip install pyclip" in your python terminal (or anaconda prompt)
 
+![image](https://user-images.githubusercontent.com/55988027/117706200-e8a89200-b1c4-11eb-9756-b29fd47579a0.png)
+
 #  Error Shorthands (case insensitive):
 
 Traffic Not Seen - not seen, ns, n,not,no
