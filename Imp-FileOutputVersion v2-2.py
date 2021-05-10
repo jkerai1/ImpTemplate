@@ -199,7 +199,36 @@ while True: ##run infinitely until session timeout
         PrintAndAppend("Geo Org: " + Geo  +"\n")
         PrintAndAppend("We can confirm the IP provided is currently being blocked due to a VPN or a hosted environment and blocked due to a Javascript or Browser cookie issue.")
 
+    elif Error_type.__contains__("pb") or Error_type == ("partialblock"): 
 
+        Browser, Country = GetBrowserAndCountry()
+        Geo = input("what is geo?   ").lstrip() ##remove left most spaces
+        Geo = CapitaliseEveryFirstLetter(Geo)
+        
+        if Geo == ("Servermania"): ##weird case that doesnt have space before caps so algorithm ignores it
+            Geo = "ServerMania"
+            
+        PrintAndAppend("\n" + str(count) + " -------------------------------------------------------------------------------------------------------------------------") ##seperator
+        Printfunc(IP)
+        PrintAndAppend("Browser: " + Browser) 
+        PrintAndAppend("Country: "+ Country)
+        PrintAndAppend("Geo Org: " + Geo  +"\n")
+        PrintAndAppend("We can confirm that some traffic from the IP provided is currently being blocked due to a VPN or a hosted environment and blocked due to a Javascript or Browser cookie issue. The rest of the traffic has been allowed.")
+        DrawTextBox()
+
+    elif Error_type.__contains__("pfi") or Error_type == "partialforce": 
+
+        Browser, Country = GetBrowserAndCountry()
+     
+        
+    
+        PrintAndAppend("\n" + str(count) + " -------------------------------------------------------------------------------------------------------------------------") ##seperator
+        Printfunc(IP)
+        PrintAndAppend("Browser: " + Browser) 
+        PrintAndAppend("Country: "+ Country +"\n")
+        PrintAndAppend("We can confirm that some traffic for that IP provided was blocked due to a Javascript or Browser cookie issue. The rest of the traffic has been allowed.")
+        DrawTextBox()
+        
 ###Normal Cases####
     elif ("inv") in Error_type or ("cook") in Error_type or "java" in Error_type or Error_type == "js" or Error_type.__contains__("forc") or Error_type == "fi" or Error_type.__contains__("bloc") or Error_type.__contains__("tok"):
         Browser, Country = GetBrowserAndCountry()
