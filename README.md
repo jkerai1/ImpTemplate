@@ -61,7 +61,7 @@ f.close() - closes file in case u need to delete the .txt
 
 # Jupyter Notebook Users
 
-To paste as plain text is ctrl shift v to Teams if copying straight from Jupyter notebook     <<<
+To paste as plain text is ctrl shift v to Teams if copying straight from Jupyter notebook AND NOT using the AutoCopy Version     <<<
 
 Ctrl + enter is run a block
 
