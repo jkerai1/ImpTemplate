@@ -56,7 +56,7 @@ Program is easiest to use in Juypter notebook. Jupyter also lets you open .txt a
 
 ctrl + c interrupts python terminal but ctrl shift c (copying as raw text) does not (does not apply to jupyter notebook but does for the Jupyter Terminal)
 
-f.close() - closes file in case u need to delete the .txt
+f.close() - closes file in case u need to edit the .txt
 
 
 # Jupyter Notebook Users
@@ -65,11 +65,7 @@ To paste as plain text is ctrl shift v to Teams if copying straight from Jupyter
 
 Ctrl + enter is run a block
 
-Shift + L toggles line numbers in jupyter - useful to debugging
-
-Bottom blocks are buttons to take you to a website, set accordingly
-
-![image](https://user-images.githubusercontent.com/55988027/117545508-f5d74c80-b01d-11eb-8e07-e362191f7bb9.png)
+Shift + L toggles line numbers in jupyter - useful for debugging
 
 
 # Notepad ++ users
