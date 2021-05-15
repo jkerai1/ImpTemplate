@@ -85,7 +85,7 @@ If you want to reload the .txt automatically on notepad++, go to Settings / Pref
 
 - Autocapitialization & removal of whitespaces
 
-- Regex to validate IP address
+- Regex to validate IP address (pending on GUI version)
 
 - Punctuation stripping on Country line
 
