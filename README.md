@@ -7,7 +7,7 @@ FileOutput Version(s) outputs a text file with all logged events but can't be ru
 
 .ipynb code also outputs a text file also, this version has nicer readability, checkboxes but can only be run on Jupyter Notebook
 
-AutoCopy version requires pyclip. To install "pip install pyclip" in your python terminal (or anaconda prompt)
+AutoCopy version requires pyclip. To install "pip install pyclip" in your python terminal (or anaconda prompt) MS teams version requires pymsteams which can be installed using "pip install pymsteams" in the same manner
 
 ![image](https://user-images.githubusercontent.com/55988027/117706200-e8a89200-b1c4-11eb-9756-b29fd47579a0.png)
 
