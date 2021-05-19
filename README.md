@@ -91,9 +91,6 @@ If you want to reload the .txt automatically on notepad++, go to Settings / Pref
 
 - Punctuation stripping on Country line
 
-# Future Ideas
-
-Check box for websites if users want it, personally i find keyboard faster
 
 # Snow Misc
 
