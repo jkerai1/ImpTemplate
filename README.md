@@ -9,6 +9,8 @@ FileOutput Version(s) outputs a text file with all logged events but can't be ru
 
 AutoCopy version requires pyclip. To install "pip install pyclip" in your python terminal (or anaconda prompt) MS teams version requires pymsteams which can be installed using "pip install pymsteams" in the same manner
 
+GUI version and MSTeams version function identically, with the exception of the MS webhook.
+
 ![image](https://user-images.githubusercontent.com/55988027/117706200-e8a89200-b1c4-11eb-9756-b29fd47579a0.png)
 
 #  Error Shorthands (case insensitive) For Non-GUI users:
