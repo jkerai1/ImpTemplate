@@ -1,6 +1,5 @@
-import re
 import sys
-
+import re
 
 ##this file can be run in an online editor such as https://www.online-python.com/
 
@@ -133,10 +132,6 @@ while True: ##run infinitely until session timeout
         Browser, Country = GetBrowserAndCountry()
         Geo = input("what is geo?   ").lstrip() ##remove left most spaces
         Geo = CapitaliseEveryFirstLetter(Geo)
-	
-	if Geo == ("Servermania"): ##weird case that doesnt have space before caps so algorithm ignores it
-        	Geo = "ServerMania"
-	
         Printfunc(IP)
         print("Browser: " + Browser) ##i could block this into one function if i really wanted to....
         print("Country: "+ Country)
@@ -145,7 +140,7 @@ while True: ##run infinitely until session timeout
 	
     elif Error_type.__contains__("pfi") or Error_type == "partialforce": #partial force
 	
-	Browser, Country = GetBrowserAndCountry()
+        Browser, Country = GetBrowserAndCountry()
         print("\n" + str(count) + " -------------------------------------------------------------------------------------------------------------------------") ##seperator
         Printfunc(IP)
         print("Browser: " + Browser) 
@@ -175,5 +170,4 @@ while True: ##run infinitely until session timeout
           print("\n incorrect option \n Options are: \n\n - not seen - not seen,ns,n.not,n \n\n - Seen - s,allow,allowed,s \n\n - traffic blocked - inv,invalid, cook, cookie, java, javascript, js, fi, forc, bloc, tok \n\n -KVDC - kv, kvdc, kvd, vp, vpn, host \n \nfor further info please see readme https://github.com/jkerai1/ImpTemplate/blob/main/README.md ")
     
     count += 1    
-    print("\n-------------------------------------------------------------------------------------------------------------------------")    
-##Random Test IP: 221.241.59.100
+    print("\n-------------------------------------------------------------------------------------------------------------------------") 
