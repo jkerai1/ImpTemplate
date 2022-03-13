@@ -1,6 +1,10 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jkerai1/ImpTemplate/HEAD)
-# Imp Template Generator 
 
+###Using with Binder - mybinder.org (alternatively click the button!):
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jkerai1/ImpTemplate/HEAD)
+No autocopy and no File output
+
+![Capture](https://user-images.githubusercontent.com/55988027/158075912-10ec3620-1ed4-4038-9865-cb830ccbf993.PNG)
+#using with online editor
 "Imp -Template v1.1-noFileOutput.py" is just for the online editor i.e. no file output, https://www.online-python.com/
 
 
@@ -46,7 +50,7 @@ opera - op
 
 yandex - yan, ya
 
-F1 app - f1
+app - f1
 
 
 # AutoCopy
