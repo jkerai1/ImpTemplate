@@ -108,11 +108,3 @@ Enable template toolbar
 
 Click on the "+" to create a template
 
-![image](https://user-images.githubusercontent.com/55988027/117541325-485b3d80-b00b-11eb-9fe7-522170fde830.png)
-
-
-Assigning to yourself does not seem to work at the moment.
-
-Fill in company name(s) as apprioprate 
-
-![117545567-3fc03280-b01e-11eb-9ee2-0fbaa9e24f2e](https://user-images.githubusercontent.com/55988027/118389566-6dab0580-b622-11eb-9c23-ef9e9aa30d92.png)
