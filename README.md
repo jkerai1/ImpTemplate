@@ -9,6 +9,7 @@ After hitting run (sideways triangle/play button):
 # Using with online editor
 "Imp -Template v1.1-noFileOutput.py" is just for the online editor i.e. no file output, https://www.online-python.com/
 
+Alternatively you can use something like: https://github.com/pyscript/pyscript and run as a .html 
 
 FileOutput Version(s) outputs a text file with all logged events but can't be run in an online editor (because you can't create the file locally). notepad++ recommended for this method as it has silent auto-refresh. (if you want to work that way that is)
 
@@ -98,13 +99,6 @@ If you want to reload the .txt automatically on notepad++, go to Settings / Pref
 
 - Punctuation stripping on Country line
 
+-------------------------------------------------
 
-# Snow Misc
-
-
-Enable template toolbar
-
-![image](https://user-images.githubusercontent.com/55988027/117541308-35e10400-b00b-11eb-9c0e-24862d7276c0.png)
-
-Click on the "+" to create a template
-
+This repo will not be maintained now
